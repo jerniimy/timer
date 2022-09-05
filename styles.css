@@ -5,6 +5,7 @@
 * {
   background: #F7F6F2;
   font-family: "Hometown";
+  color: #DD5527;
 }
 .dots {
   display: inline-flex;
@@ -20,12 +21,41 @@
 .dot.active {
   background: black;
 }
-.card {
+.wrapper {
   display: none;
+  width: max-content;
+  min-width: 200px;
+  height: max-content;
+  min-height: 200px;
   left: 0;
   right: 0;
   margin: auto;
 }
-.card.active {
-  display: block;
+.wrapper.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  text-align: center;
+  font-size: 25px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+input[type = button] {
+  font-size: 35px;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: min-content;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-bottom: 30px;
+  border: none;
+  background: #DD5527;
+  color: #F7F6F2;
 }

@@ -6,33 +6,39 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<div class="card first active">
-	<p>hi! i will try to help you manage your time<з</p>
+	<div class="wrapper active" id="firstWrapper">
+		<div class="card">
+	<p class="content">hi! i will try to help you manage your time<з</p>
 	<input type="button" value="cool" onclick="">
+    </div>
 	<div class="dots">
-	<div class="dot active"></div>
-	<div class="dot"></div>
-	<div class="dot"></div>
+	<div class="dot active" id="one" onclick="switchToFirstCard()"></div>
+	<div class="dot" id="two" onclick="switchToSecondCard()"></div>
+	<div class="dot" id="three" onclick="switchToThirdCard()"></div>
 </div>
 </div>
-<div class="card second">
-	<p>what do you want me to remind you?</p>
+<div class="wrapper" id="secondWrapper">
+	<div class="card">
+	<p class="content">what do you want me to remind you?</p>
 	<input type="input">
 	<input type="button" value="next step" onclick="">
+  </div>
 	<div class="dots">
-	<div class="dot active"></div>
-	<div class="dot"></div>
-	<div class="dot"></div>
+	<div class="dot" id="one" onclick="switchToFirstCard()"></div>
+	<div class="dot active" id="two" onclick="switchToSecondCard()"></div>
+	<div class="dot" id="three" onclick="switchToThirdCard()"></div>
 </div>
 </div>
-<div class="card third">
-	<p>in what time to remind?</p>
+<div class="wrapper" id="thirdWrapper">
+	<div class="card">
+	<p class="content">in what time to remind?</p>
 	<input type="input">
 	<input type="button" value="finish" onclick="">
+</div>
 	<div class="dots">
-	<div class="dot active"></div>
-	<div class="dot"></div>
-	<div class="dot"></div>
+	<div class="dot" id="one" onclick="switchToFirstCard()"></div>
+	<div class="dot" id="two" onclick="switchToSecondCard()"></div>
+	<div class="dot active" id="three" onclick="switchToThirdCard()"></div>
 </div>
 </div>
   <script src="main.js"></script>
