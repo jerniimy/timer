@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "Hometown";
+    src: url(hometown_memesbruh03.ttf);
+   }
+* {
+  background: #F7F6F2;
+  font-family: "Hometown";
+}
+.dots {
+  display: inline-flex;
+}
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  outline: 1px solid black;
+  outline-offset: 2px;
+  margin: 5px;
+}
+.dot.active {
+  background: black;
+}
+.card {
+  display: none;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.card.active {
+  display: block;
+}
